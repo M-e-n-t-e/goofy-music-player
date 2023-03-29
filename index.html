@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Music player</title>
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
+        <script src="https://kit.fontawesome.com/bc862ce4bb.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="music-player">
+                <nav>
+                    <div class="circle">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="circle">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </nav>
+                <img src="folder/spongebob.png" alt="Music cover" class="song-img">
+                <h1>Bad puggies</h1>
+                <p>Muchael Jachson</p>
+                <audio class="song">
+                    <source src="folder/bad_piggies_drip(128k).mp3" type="audio/mp3">
+                </audio>
+                <div class="slider-wrapper">
+                    <div class="current-time">00:00</div>
+                    <input type="range" class="progress" value="0">
+                    <div class="total-length">00:00</div>
+                </div>
+                <div class="volume-wrapper">
+                    <i class="fa-solid fa-volume-down" id="down-and-mute"></i>
+                    <input type="range" class="volume" value="30" onchange="setVolume()"> 
+                    <i class="fa-solid fa-volume-up"></i>
+                </div>
+                <div class="controls">
+                        <div class="runner"><i class="fa-solid fa-backward"></i></div>
+                        <div onclick="playPause()"><i class="fa-solid fa-play ctrlIcon" ></i></div>
+                        <div class="run"><i class="fa-solid fa-forward"></i></div>
+                </div>
+            </div>
+        </div>
+        <p class="sorry">
+            Sorry mate I had no time for this 🏃‍♂️💨
+        </p>
+    </body>
+</html>
